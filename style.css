@@ -220,3 +220,94 @@ body.dark .nav h3 {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+  /* ===== SECTION ===== */
+.section {
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  max-width: 680px;
+  margin: auto;
+  color: var(--text-muted);
+  margin-bottom: 60px;
+}
+
+/* ===== GRID ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ===== CARD ===== */
+.skill-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: left;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.skill-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ===== TAGS ===== */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tags span {
+  padding: 8px 14px;
+  font-size: 13px;
+  background: #f3f4f6;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* ===== DARK MODE ===== */
+body.dark .skill-card {
+  background: #0f122a;
+  border-color: #2a2f55;
+}
+
+body.dark .tags span {
+  background: #1b1f3b;
+  color: #e5e7eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
