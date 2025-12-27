@@ -171,4 +171,41 @@ header {
   height: 10px;
   background
 
+/* ===== DARK MODE ===== */
+body.dark {
+  background: #0b0d1c;
+  color: #e5e7eb;
+}
+
+body.dark header {
+  background: #0b0d1c;
+  border-color: #1f233d;
+}
+
+body.dark a {
+  color: #9aa0c7;
+}
+
+body.dark .btn.outline {
+  border-color: #2a2f55;
+  color: #e5e7eb;
+}
+
+body.dark .icon {
+  border-color: #2a2f55;
+}
+
+body.dark .hire-badge {
+  background: #13162b;
+  color: #e5e7eb;
+}
+
+body.dark .stats span,
+body.dark .hero p {
+  color: #9aa0c7;
+}
+
+body.dark .nav h3 {
+  color: #fff;
+}
 
