@@ -29,7 +29,7 @@ body {
 .nav {
   padding: 20px 40px;
   display: flex;
-  position: fixed;
+  position: absolute;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
 }
@@ -97,6 +97,8 @@ body {
   width: 320px;
   border-radius: 50%;
   max-width: 100%;
+  right:60px;
+  top:20px;
   display: block;
 }
 
