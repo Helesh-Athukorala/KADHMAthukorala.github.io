@@ -222,3 +222,32 @@ body.dark .project-tags span {
   }
 }
 
+
+/* ===== CONTACT ===== */
+.contact-form {
+  max-width: 600px;
+  margin: 60px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--muted);
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
+
