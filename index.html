@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Developer - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <h1>John Developer</h1>
-      </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#" class="nav-link active">Home</a></li>
-          <li><a href="#" class="nav-link">Skills</a></li>
-          <li><a href="#" class="nav-link">Experience</a></li>
-          <li><a href="#" class="nav-link">Projects</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="theme-toggle" id="themeToggle">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-      </button>
-    </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header>
+    <nav class="nav">
+      <h3>John Developer</h3>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><i data-feather="sun"></i></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="main">
-    <div class="container">
-      <div class="hero">
-        <div class="hero-content">
-          <div class="availability-badge">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <circle cx="6" cy="6" r="6" fill="#10B981"/>
-            </svg>
-            Available for Work
-          </div>
-          
-          <h2 class="hero-title">
-            Hello, I'm<br>
-            <span class="hero-name">John Developer</span>
-          </h2>
-          
-          <p class="hero-description">
-            Senior Software Engineer crafting digital experiences with <strong>5+ years</strong> of expertise
-          </p>
-          
-          <p class="hero-details">
-            Specializing in full-stack development, DevOps practices, and scalable solutions that drive business growth.
-          </p>
-          
-          <div class="hero-actions">
-            <button class="btn btn-primary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7,10 12,15 17,10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-              </svg>
-              Download Resume
-            </button>
-            <button class="btn btn-secondary">View My Work</button>
-          </div>
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+
+    <!-- Left -->
+    <div class="hero-left">
+      <h1>Hello, I'm<br>John Developer</h1>
+
+      <p class="main">
+        Senior Software Engineer crafting digital experiences with
+        <strong>5+</strong> years of expertise
+      </p>
+
+      <p class="sub">
+        Specializing in full-stack development, DevOps practices, and scalable
+        solutions that drive business growth.
+      </p>
+
+      <div class="buttons">
+        <button class="btn primary">
+          <i data-feather="download"></i>
+          Download Resume
+        </button>
+
+        <button class="btn outline">
+          View My Work
+        </button>
+      </div>
+
+      <div class="socials">
+        <div class="icon"><i data-feather="github"></i></div>
+        <div class="icon"><i data-feather="linkedin"></i></div>
+        <div class="icon"><i data-feather="mail"></i></div>
+      </div>
+
+      <div class="stats">
+        <div>
+          <h2>50+</h2>
+          <span>Projects</span>
         </div>
-        
-        <div class="hero-image">
-          <div class="image-container">
-            <img 
-              src="https://images.pexels.com/photos/7652243/pexels-photo-7652243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
-              alt="Portrait of a woman in a modern office pondering ideas, holding a notebook and pen."
-              width="975"
-              height="650"
-            />
-          </div>
+        <div>
+          <h2>5+</h2>
+          <span>Years Exp</span>
+        </div>
+        <div>
+          <h2>100%</h2>
+          <span>Client Satisfaction</span>
         </div>
       </div>
     </div>
-  </main>
+
+    <!-- Right -->
+    <div class="hero-right">
+      <div class="image-wrapper">
+        <img src="profile.jpg" alt="Profile">
+        <div class="hire-badge">
+          <span class="dot"></span>
+          Available for hire
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <script src="script.js"></script>
 </body>
