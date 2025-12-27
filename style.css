@@ -29,7 +29,6 @@ body {
 .nav {
   padding: 20px 40px;
   display: flex;
-  position: absolute;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
 }
@@ -49,11 +48,13 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 80px 40px;
+
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1.2fr 1fr; /* TEXT | IMAGE */
   align-items: center;
+  gap: 60px;
 }
+
 
 .hero h1 {
   font-size: 52px;
@@ -91,6 +92,11 @@ body {
 .stats {
   display: flex;
   gap: 40px;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
 }
 
 .avatar img {
@@ -327,14 +333,7 @@ body.dark .timeline-dot {
 
 @media (max-width: 900px) {
   .hero {
-    grid-template-columns: 1fr; /* single column */
-  }
-
-  .hero-right {
-    order: 2;          /* image goes AFTER text */
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    grid-template-columns: 1fr;
   }
 
   .hero-left {
@@ -342,9 +341,10 @@ body.dark .timeline-dot {
     text-align: center;
   }
 
-  .stats,
-  .buttons {
-    justify-content: center;
+  .hero-right {
+    order: 2;
+    margin-top: 40px;
   }
 }
+
 
