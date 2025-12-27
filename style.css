@@ -95,7 +95,7 @@ body {
 
 .hero-right {
   display: flex;
-  justify-content: right;
+  justify-content: left;
   right:400px;
 }
 
