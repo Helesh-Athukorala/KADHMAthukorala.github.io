@@ -96,7 +96,7 @@ body {
 .hero-right {
   display: flex;
   justify-content: center;
-  right:200px;
+  right:400px;
 }
 
 .avatar img {
