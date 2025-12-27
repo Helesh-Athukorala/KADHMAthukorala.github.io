@@ -222,7 +222,8 @@ body.dark .nav h3 {
 }
 
 
-  /* ===== SECTION ===== */
+
+/* ===== SECTION ===== */
 .section {
   padding: 100px 24px;
   max-width: 1200px;
@@ -310,4 +311,3 @@ body.dark .tags span {
     grid-template-columns: 1fr;
   }
 }
-
