@@ -29,6 +29,7 @@ body {
 .nav {
   padding: 20px 40px;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
 }
