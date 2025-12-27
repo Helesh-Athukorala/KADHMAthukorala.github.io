@@ -99,6 +99,10 @@ body {
   right:400px;
 }
 
+.avatar{
+  right:460px;
+  top:320px;
+}
 .avatar img {
   width: 320px;
   border-radius: 50%;
