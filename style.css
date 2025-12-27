@@ -1,0 +1,172 @@
+:root {
+  --text-dark: #0f1221;
+  --text-muted: #6b6f85;
+  --primary: #0b0d1c;
+  --border: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: var(--text-dark);
+}
+
+/* ===== NAVBAR ===== */
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 24px;
+}
+
+.hero p.main {
+  font-size: 20px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.hero p.sub {
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+/* Socials */
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 48px;
+}
+
+.stats h2 {
+  font-size: 28px;
+}
+
+.stats span {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ===== IMAGE ===== */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.15);
+}
+
+/* Hire badge */
+.hire-badge {
+  position: absolute;
+  bottom: 20px;
+  right: -40px;
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background
