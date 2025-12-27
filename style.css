@@ -48,7 +48,6 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 80px 40px;
-
   display: grid;
   grid-template-columns: 1.2fr 1fr; /* TEXT | IMAGE */
   align-items: center;
@@ -97,6 +96,7 @@ body {
 .hero-right {
   display: flex;
   justify-content: center;
+  right:200px;
 }
 
 .avatar img {
