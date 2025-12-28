@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">      <!-- main theme -->
+  <link rel="stylesheet" href="projects.css">  <!-- projects page -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- NAVBAR (same theme) -->
+  <header class="nav">
+    <h3>Think Different</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li id="theme-toggle"><i data-feather="moon"></i></li>
+    </ul>
+  </header>
+
+  <!-- PROJECTS -->
+  <section class="section reveal">
+    <h2>All Projects</h2>
+    <p class="section-desc">
+      Click on any project to explore details, technologies, and goals.
+    </p>
+
+    <div class="projects-page-grid">
+
+      <a href="#" class="project-box reveal">
+        <img src="360_F_628011292_ycsXA7hv9LMNrOGbLgpZaHalWYWBAr41.jpg" alt="Portfolio Website">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Modern developer portfolio with animations and dark mode.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="project-box reveal">
+        <img src="360_F_628011292_ycsXA7hv9LMNrOGbLgpZaHalWYWBAr41.jpg" alt="E-Commerce Platform">
+        <div class="project-info">
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack platform with authentication and payments.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node</span><span>MongoDB</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="project-box reveal">
+        <img src="360_F_628011292_ycsXA7hv9LMNrOGbLgpZaHalWYWBAr41.jpg" alt="DevOps Automation">
+        <div class="project-info">
+          <h3>DevOps Automation</h3>
+          <p>CI/CD pipelines using Docker and Kubernetes.</p>
+          <div class="project-tags">
+            <span>Docker</span><span>Jenkins</span><span>K8s</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <a href="index.html" class="btn outline back-btn" style="text-decoration: none;">← Back to Home</a>
+  </section>
+
+  <script src="projects.js"></script>
+</body>
+</html>
