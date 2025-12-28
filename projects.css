@@ -1,0 +1,65 @@
+
+.projects-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.project-box {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 18px;
+}
+
+.project-info h3 {
+  margin-bottom: 6px;
+}
+
+.project-info p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.project-tags span {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.06);
+  margin-right: 6px;
+}
+
+/* Hover */
+.project-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Dark mode */
+body.dark .project-box {
+  border-color: rgba(255,255,255,0.15);
+}
+
+body.dark .project-tags span {
+  background: rgba(255,255,255,0.12);
+}
+
+.back-btn {
+  display: block;
+  width: fit-content;
+  margin: 60px auto 0;
+}
