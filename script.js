@@ -52,3 +52,20 @@ if (backToTop) {
     });
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Feather icons
+  if (window.feather) feather.replace();
+
+  const toggle = document.getElementById("theme-toggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    // Update icon
+    const iconName = document.body.classList.contains("dark") ? "sun" : "moon";
+    toggle.innerHTML = `<i data-feather="${iconName}"></i>`;
+    feather.replace();
+  });
+});
